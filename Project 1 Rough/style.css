@@ -1,0 +1,402 @@
+#title {  
+    background-image: url("./images/dogsncats.PNG");
+    background-repeat: no-repeat;
+    color: rgb(26, 112, 170);
+    margin-top: 0;
+    padding-bottom: 3em;
+}
+
+@media only screen and (max-width: 360px) {
+    #title {
+      background-repeat: repeat;
+    }
+    #site-name {
+      font-size: 5em;
+    }
+    #ticketmaster {
+      margin-left: 4em;
+    }
+    #tm-logo {
+      margin-top: .75em;
+    }
+  #logo {
+      display: none;
+    }
+  }
+
+
+@media only screen and (max-width: 625px) {
+  #title {
+    background-repeat: repeat;
+  }
+  #site-name {
+    font-size: 5em;
+  }
+  #ticketmaster {
+    margin-left: 4em;
+  }
+  #tm-logo {
+    margin-top: .75em;
+  }
+#logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+    #title {
+      background-repeat: repeat;
+    }
+    #site-name {
+      font-size: 5em;
+    }
+    #options-box {
+        position: relative;
+        left: 19em;     
+    }
+  } 
+
+
+ @media only screen and (max-width: 900px) {
+    #title {
+      background-repeat: repeat;
+    }
+    #site-name {
+      font-size: 5em;
+    }
+    #options-box {
+        position: relative;
+        left: 19em;     
+    }
+  } 
+
+@media only screen and (max-width: 3840px) {
+    #title {
+      background-repeat: repeat;
+    }
+    #site-name {
+      font-size: 5em;
+    }
+    #options-box {
+        position: relative;
+        left: 21.5em;
+    }
+  }
+
+#pages {
+    text-align: center;
+    padding-left: 2em;
+}
+
+#page-1, #page-2, #page-3 {
+    font-size: 1.5em; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 8.5em;
+}
+
+#selections {
+    padding: 5em 0;
+    margin-bottom: 0em;
+}
+
+#login-form-body {
+    background-color: #EDF4FF;
+}
+
+#login-form-btn {
+    background-color: #84A7D8;
+}
+
+.reserve {
+    margin-top: .5em;
+}
+
+#left-1:hover, #right-1:hover, #left-2:hover, #right-2:hover, #left-3:hover, #right-3:hover, #left-4:hover, #right-4:hover {
+    background-color: rgb(26, 112, 170);
+}
+
+#login-form-btn:hover, .reserve:hover, .local-buy:hover {
+    background-color: rgb(26, 112, 170);
+}
+
+.btn {
+    background-color: #84A7D8;
+}
+
+#welcome {
+    background-color: #EDF4FF;
+    padding: 0em;
+    text-align: center;
+}
+
+#random-btn{
+    margin-top: 1.5em;
+}
+
+#random-btn, #login-btn {
+    background-color: #84A7D8;
+}
+
+#random-btn:hover, #login-btn:hover {
+    background-color: rgb(26, 112, 170);
+}
+
+.btn-text {
+    color: white;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.event {
+    background-color: #EDF4FF;
+}
+
+span {
+    color: black;
+}
+
+#cty-img {
+    padding: 1em 0;
+    width: 100%;
+}
+
+#back {
+    text-align: center; 
+}
+
+#back-btn {
+    color: #ADCDFF;
+    font-size: 1.55em;
+    font-weight: 700; 
+}
+
+#options {
+    margin-bottom: 10em;
+}
+
+#options-box {
+    background-color: #EDF4FF;
+    border:rgb(26, 112, 170);
+    border-width: .75em;
+    border-block-end-style: solid;
+    padding-top: 15px;
+    z-index: 10;
+    min-width: 30em;
+    margin-right: 50%;
+}
+
+#user{
+    color: rgb(26, 112, 170);
+    font-size: 1.25em;
+}
+
+#radio-buttons {
+    padding-left: 3em;
+} 
+
+#option-confirm, #cancel, .modal-close {
+   font-size: 1.25em;
+   font-weight: 900;
+   color: #ADCDFF;
+}
+
+#option-confirm:hover, #cancel:hover, #back-btn:hover {
+    color: rgb(26, 112, 170);  
+}
+
+.modal-close:hover {
+    font-size: 1.75em;
+}
+
+#or {
+    color: rgb(26, 112, 170);
+    font-size: 1.25em;
+    margin-top: 1.75em;
+}
+
+.denver {
+    background-image: url("https://theknow.denverpost.com/wp-content/uploads/2016/03/cdxxDENVERSKYLINE__HHR7835-001.jpg");
+}
+
+.seattle {
+    background-image: url("https://d56b293rhv8dp.cloudfront.net/locations/20/cover_images/xlarge_w/EagleRider_Seattle.jpg?1561413002");  
+}
+
+.miami {
+    background-image: url("https://m.fourseasons.com/alt/img-opt/~70.1530.0,0000-156,2500-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/MIA/MIA_664_original.jpg");
+}
+
+.losangeles {
+    background-image: url("https://cdn.britannica.com/97/100097-050-7E411D6F/Harbor-Freeway-Los-Angeles.jpg");
+}
+
+.atlanta {
+    background-image: url("https://cdn.vox-cdn.com/thumbor/ZtUjPlkmX-ytiq2ZoV6k23s-D6Y=/0x0:1500x772/1200x900/filters:focal(630x266:870x506)/cdn.vox-cdn.com/uploads/chorus_image/image/65960721/Midtown_Jonathan_Phillips_Curbed_Atlanta.0.jpg");
+}
+
+.newyork {
+    background-image: url("https://www.nationalgeographic.com/content/dam/travel/Guide-Pages/north-america/united-states/newyork/newyork_NationalGeographic_2328428.adapt.1900.1.jpg");
+}   
+.houston {
+    background-image: url("https://lp-cms-production.imgix.net/2019-06/5f0b645e20e3a4e4cae6ce133e276b04-houston.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4");
+}
+
+#featured {
+    background-color: #EDF4FF;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0em;
+}
+
+#results {
+    padding-bottom: 2.25em;
+}
+
+.label {
+    font-size: 1.75em;
+    color: rgb(26, 112, 170);
+    padding-left: 1em;
+    padding-top: .5em;
+}
+
+#landmarks {
+    background-color: #EDF4FF;
+    margin-top: 1.5em;
+}
+
+.ribbon {
+    width: 100%;
+    background-color: rgba(26, 112, 170, 0.3);
+    color: white;  
+}
+
+/* for sticky footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+ }
+
+main {
+    flex: 1 0 auto;
+}
+
+#foot {
+    background-color: rgb(26, 112, 170);
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+
+.event-results {
+    text-align: center;
+    max-height: 40em;
+    padding: .25em; 
+}
+
+.event-title {
+    font-size: 1.5em;
+}
+
+/* change the color of the selected radio button to match the site theme is not working */
+span.test::after {
+    background-color: rgb(26, 112, 170);
+}
+
+.buttons {
+    background-color: #84A7D8;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+#modal1 {
+    z-index: 10;
+    background-color: red;
+    border: 5px white solid;
+}
+
+.error {
+    color: white;
+}
+
+#jackie {
+    width: 25%;
+    height: 25%;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+hr {
+    border-color: rgb(26, 112, 170);  
+}
+
+#tm { 
+ text-align: center;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+#ticketmaster {  
+    margin-left: 6em;
+}
+
+.cost {
+    color: green;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.local {
+    background-color: rgb(26, 112, 170);
+    color: white;  
+    font-size: 1.5em;
+    padding-left: 2em;
+}
+
+.local-title{
+    color: rgb(26, 112, 170); 
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-bottom: .25em;
+}
+
+.local-images {
+    width: 10em;
+    height: 6em;
+}
+
+#events {
+    padding-left: 1em;
+}
+
+#more {
+    color: #84A7D8;
+    font-weight: 700;
+}
+
+#more:hover {
+    color: rgb(26, 112, 170);
+}
+
+#full-list {
+    padding-left: 1em;
+}
+
+.container {
+    width: 100%;
+}
