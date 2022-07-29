@@ -96,7 +96,7 @@
   }
 
 h1 {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC';
     font-size: 8.5em;
     margin: 0.5rem 0 1.68rem 0;
 }
@@ -257,3 +257,69 @@ main {
 .container {
     width: 100%;
 }
+
+/*results page*/
+
+.cancel-margin {
+    margin-right: 0px;
+  }
+  
+  .results-text {
+    padding: 25px; 
+  }
+  
+  .list-group{
+    padding: 25px;
+    max-height: 800px;
+    margin-bottom: 10px;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .card-body{
+    text-align: center;
+  }
+  
+  .card-img-top{
+    max-height: 30rem;
+    max-width: 35rem;
+  }
+  
+  .img-thumbnail {
+    margin-right: 10px;
+    width: 50px; 
+    height: 50px;
+  }
+  
+  .bg-results {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  #map {
+    max-width: 30rem;
+    max-height: 25rem;
+    margin: 18px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .display-4 {
+      font-size: 200%;
+    }
+  }
+  
+  .tab-content {
+    margin-bottom: 100px;
+  }
+  
+  .selected {
+    border: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    background-color: white;
+  }

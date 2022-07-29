@@ -7,7 +7,7 @@ $(document).ready(function() {
   var organizationID = ""; //this is organizations ID
   var orgWebsite = ""; //this is the organizations website
   var params = ""; //parameter search for petfinder API
-  var firstValidIndex = -1; //set as invalid
+  var firstValidIndex = 1; //set as invalid
   var apiKey = "IWz2CjT86FG1BNBbvACbPEvsdE2zLJoZlP75I04QREwRmXhDtH";
   var secret = "ChLZ55rWGUFzqa4cw1biH3Z1nOsrO0JUiD0a5rQy"
   petFinderAccess();
@@ -35,9 +35,14 @@ $(document).ready(function() {
     const gender = localStorage.getItem("gender");
     const species = localStorage.getItem("species");
     const breed = localStorage.getItem("breed");
-    
+    console.log(zip);
+    console.log(age);
+    console.log(gender);
+    console.log(species);
+    console.log(breed);
+
     //Build url string
-    var url = "https://api.petfinder.com/v2/animals?"
+    var url = "https://api.petfinder.com/v2/animals/"
 
     // if Any breed, or no age is specificed remove breed/age parameters
     if (breed == "Any"){
@@ -51,10 +56,10 @@ $(document).ready(function() {
     }
 
     url = url + params;
-
+    console.log(url)
     //API access
     $.ajax({
-      type: "GET",
+      method: "GET",
       url: url,    
       headers: {"Authorization": "Bearer " + accessToken},
       success: function(response) {
