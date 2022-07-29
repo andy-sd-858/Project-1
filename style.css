@@ -1,0 +1,259 @@
+#title {  
+    background-image: url("./images/dogsncats.PNG");
+    background-repeat: no-repeat;
+    color: rgb(26, 112, 170);
+    margin-top: 0;
+    padding-bottom: 2em;
+    text-align: center;
+}
+.stockphoto{
+        display: contents;
+        flex-wrap: wrap;
+        object-fit: contain;
+        padding: 10px;
+        margin: 10px;
+        justify-content: space-evenly;
+        max-width: 100%;
+}
+@media only screen and (max-width: 360px) {
+    #title {
+      background-repeat: repeat;
+    }
+    #site-name {
+      font-size: 5em;
+    }
+    #logo {
+      display: none;
+    }
+  }
+
+
+@media only screen and (max-width: 625px) {
+  #title {
+    background-repeat: repeat;
+  }
+  #site-name {
+    font-size: 5em;
+  }
+  #logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+    #title {
+      background-repeat: repeat;
+    }
+    #site-name {
+      font-size: 5em;
+    }
+    #options-box {
+        position: relative;
+        left: 19em;     
+    }
+  } 
+
+
+ @media only screen and (max-width: 900px) {
+    #title {
+      background-repeat: repeat;
+    }
+    #site-name {
+      font-size: 5em;
+    }
+    #options-box {
+        position: relative;
+        left: 19em;     
+    }
+  } 
+
+@media only screen and (max-width: 3840px) {
+    #title {
+      background-repeat: repeat;
+    }
+    #site-name {
+      font-size: 5em;
+    }
+    #options-box {
+        position: relative;
+        left: 21.5em;
+    }
+  }
+
+#pages {
+    text-align: center;
+    padding-left: 2em;
+}
+
+#page-1, #page-2, #page-3 {
+    font-size: 1.5em; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 8.5em;
+    margin: 0.5rem 0 1.68rem 0;
+}
+
+#selections {
+    padding: 5em 0;
+    margin-bottom: 0em;
+}
+
+#login-form-body {
+    background-color: #EDF4FF;
+}
+
+#login-form-btn {
+    background-color: #84A7D8;
+}
+
+.reserve {
+    margin-top: .5em;
+}
+
+#left-1:hover, #right-1:hover, #left-2:hover, #right-2:hover, #left-3:hover, #right-3:hover, #left-4:hover, #right-4:hover {
+    background-color: rgb(26, 112, 170);
+}
+
+#login-form-btn:hover, .reserve:hover, .local-buy:hover {
+    background-color: rgb(26, 112, 170);
+}
+
+.btn {
+    background-color: #84A7D8;
+}
+
+#welcome {
+    background-color: #EDF4FF;
+    padding: 0em;
+    text-align: center;
+}
+
+#random-btn{
+    margin-top: 1.5em;
+}
+
+#random-btn, #login-btn {
+    background-color: #84A7D8;
+}
+
+#random-btn:hover, #login-btn:hover {
+    background-color: rgb(26, 112, 170);
+}
+
+.btn-text {
+    color: white;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+span {
+    color: black;
+}
+
+#back {
+    text-align: center; 
+}
+
+#back-btn {
+    color: #ADCDFF;
+    font-size: 1.55em;
+    font-weight: 700; 
+}
+
+#options {
+    margin-bottom: 10em;
+}
+
+#options-box {
+    background-color: #EDF4FF;
+    border:rgb(26, 112, 170);
+    border-width: .75em;
+    border-block-end-style: solid;
+    padding-top: 15px;
+    z-index: 10;
+    min-width: 30em;
+    margin-right: 50%;
+}
+
+#user{
+    color: rgb(26, 112, 170);
+    font-size: 1.25em;
+}
+
+
+#option-confirm, #cancel, .modal-close {
+   font-size: 1.25em;
+   font-weight: 900;
+   color: #ADCDFF;
+}
+
+#option-confirm:hover, #cancel:hover, #back-btn:hover {
+    color: rgb(26, 112, 170);  
+}
+
+.modal-close:hover {
+    font-size: 1.75em;
+}
+
+#or {
+    color: rgb(26, 112, 170);
+    font-size: 1.25em;
+    margin-top: 1.75em;
+}
+
+
+#featured {
+    background-color: #EDF4FF;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0em;
+}
+
+#results {
+    padding-bottom: 2.25em;
+}
+
+.label {
+    font-size: 1.75em;
+    color: rgb(26, 112, 170);
+    padding-left: 1em;
+    padding-top: .5em;
+}
+
+
+.ribbon {
+    width: 100%;
+    background-color: rgba(26, 112, 170, 0.3);
+    color: white;  
+}
+
+/* for sticky footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+ }
+
+main {
+    flex: 1 0 auto;
+}
+
+#foot {
+    background-color: rgb(26, 112, 170);
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
