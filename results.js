@@ -47,13 +47,13 @@ $(document).ready(function() {
 
     // if Any breed, or no age is specificed remove breed/age parameters
     if (breed == "Any"){
-      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&age=" + age;
+      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&age=" + age + "&distance=30";
     } else if (breed == "Any" && age == null){
-      params = "type=" + species + "&location=" + zip + "&gender=" + gender;
+      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&distance=30";
     } else if (age == null) {
-      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&breed=" + breed;
+      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&breed=" + breed + "&distance=30";
     } else {
-      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&age=" + age + "&breed=" + breed;
+      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&age=" + age + "&breed=" + breed + "&distance=30";
     }
 
     url = url + params;
