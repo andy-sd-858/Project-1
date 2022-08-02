@@ -1,3 +1,4 @@
+console.log("s")
 $(document).ready(function() {
 
   // global variables
@@ -7,7 +8,7 @@ $(document).ready(function() {
   var organizationID = ""; //this is organizations ID
   var orgWebsite = ""; //this is the organizations website
   var params = ""; //parameter search for petfinder API
-  var firstValidIndex = 1; //set as invalid
+  var firstValidIndex = -1; 
   var apiKey = "IWz2CjT86FG1BNBbvACbPEvsdE2zLJoZlP75I04QREwRmXhDtH";
   var secret = "ChLZ55rWGUFzqa4cw1biH3Z1nOsrO0JUiD0a5rQy"
   petFinderAccess();
@@ -42,39 +43,41 @@ $(document).ready(function() {
     console.log(breed);
 
     //Build url string
-    var url = "https://api.petfinder.com/v2/animals/"
+    var url = "https://api.petfinder.com/v2/animals?"
 
     // if Any breed, or no age is specificed remove breed/age parameters
     if (breed == "Any"){
-      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&age=" + encodeURIComponent(age);
+      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&age=" + age;
     } else if (breed == "Any" && age == null){
       params = "type=" + species + "&location=" + zip + "&gender=" + gender;
     } else if (age == null) {
       params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&breed=" + breed;
     } else {
-      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&age=" + encodeURIComponent(age) + "&breed=" + breed;
+      params = "type=" + species + "&location=" + zip + "&gender=" + gender + "&age=" + age + "&breed=" + breed;
     }
 
     url = url + params;
     console.log(url)
     //API access
     $.ajax({
-      method: "GET",
+      type: "GET",
       url: url,    
       headers: {"Authorization": "Bearer " + accessToken},
       success: function(response) {
+        console.log("hello")
         petData = response;
         createList();
         fillPetCard(firstValidIndex); // Fill petcard with first valid pet info
-      }
-    });
+        console.log(response) }
+          });
   }
 
 
   //Generate pet list html
   function createList(){
+    console.log(petData)
     for (var i = 0; i < petData.animals.length; i++) {
-
+console.log(petData)
       if (petData.animals[i].primary_photo_cropped != null){
         var petList = $("<a>").addClass("nav-link active").attr("id", "result-list").attr("href", "#").attr("data-index", i);
         var petName = petData.animals[i].name;

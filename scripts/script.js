@@ -1,6 +1,6 @@
 var apiKey = "IWz2CjT86FG1BNBbvACbPEvsdE2zLJoZlP75I04QREwRmXhDtH";
 var secret = "ChLZ55rWGUFzqa4cw1biH3Z1nOsrO0JUiD0a5rQy"
-
+console.log("string")
 $(document).ready(function() {
 
     // global variables
@@ -79,7 +79,11 @@ $(document).ready(function() {
   
         window.location.href = "results.html"; //go to results page
   
-      }
+      console.log(zipCode);
+      console.log(speciesValue);
+      console.log(breed);
+      console.log(ages);
+      console.log(gender);}
       
     }); 
   });
