@@ -209,6 +209,7 @@ console.log(petData)
     }
 
     getCoordinates(petLocation);
+    console.log(petLocation)
   }
 
 
@@ -219,7 +220,7 @@ console.log(petData)
     mapboxgl.accessToken = "pk.eyJ1IjoicHZycm90IiwiYSI6ImNsNjV0bTZ5bTA2eDAzam80dmJxcG5mcm8ifQ.DGnVkfsJF7AsHWEI23ez3w";
     var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/light-v11',
+    style: 'mapbox://styles/mapbox/light-v10',
     center: coords,
     zoom: 15
     });
@@ -239,9 +240,9 @@ console.log(petData)
 
   // mapbox geocoding to turn pet address into coordinates for map
   
-  function getCoordinates(address) {
+  function getCoordinates(petLocation) {
     var apiToken = "pk.eyJ1IjoicHZycm90IiwiYSI6ImNsNjV0bTZ5bTA2eDAzam80dmJxcG5mcm8ifQ.DGnVkfsJF7AsHWEI23ez3w";
-    var mapboxURL = "https://api.mapbox.com/geocoding/v11/mapbox.places/" + address + ".json?access_token=" + apiToken;
+    var mapboxURL = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + petLocation + ".json?access_token=" + apiToken;
 
     $.ajax({
       url: mapboxURL,
